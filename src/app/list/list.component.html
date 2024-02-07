@@ -1,0 +1,26 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Address</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userList">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.mobile }}</td>
+        <td>{{ user.address }}</td>
+        
+        <td><button (click)="viewDetails(user)">View</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  

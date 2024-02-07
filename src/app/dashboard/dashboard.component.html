@@ -1,0 +1,9 @@
+<div class="dashboard-container">
+  <div class="card" *ngFor="let userStat of userStats" 
+  [style.backgroundColor]="getBackgroundColor(userStat.label)" 
+  (click)="navigateWithQueryParam(userStat.label)">
+    {{ userStat.value }} {{ userStat.label }}
+  </div>
+</div>
+
+
