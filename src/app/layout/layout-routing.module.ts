@@ -3,8 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
-  {path:'layout',component:LayoutComponent},
-  {path:'',redirectTo:'/layout/dashboard',pathMatch:'full'},
+  { path: 'layout', component: LayoutComponent },
+  { path: '', redirectTo: '/layout/dashboard', pathMatch: 'full' },
+  { path: '**', redirectTo: '/layout/dashboard' }
 ];
 
 @NgModule({

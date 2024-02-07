@@ -13,16 +13,15 @@ import { MenucardComponent } from './menucard/menucard.component';
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
-  {path:'login',component:LoginComponent},
-  {path:'',component:LayoutComponent},
-  {path:'side',component:SidebarComponent,canActivate:[AuthGuard]},
-  {path:'dashboard',component:DashboardComponent},
-  {path:'contact',component:ContactComponent},
-  {path:'list',component:ListComponent},
-  {path:'details',component:DetailsComponent},
-  {path:'',redirectTo:'/layout',pathMatch:'full'},
- 
-  {path:'**',component:PageNotFoundComponent} 
+  { path: 'login', component: LoginComponent },
+  { path: 'side', component: SidebarComponent, canActivate: [AuthGuard] },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'list', component: ListComponent },
+  { path: 'details', component: DetailsComponent },
+  { path: 'layout', component: LayoutComponent },
+  { path: '', redirectTo: '/layout', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
