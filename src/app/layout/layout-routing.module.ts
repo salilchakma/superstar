@@ -3,13 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
-  { path: 'layout', component: LayoutComponent },
-  { path: '', redirectTo: '/layout/dashboard', pathMatch: 'full' },
-  { path: '**', redirectTo: '/layout/dashboard' }
+  {path:'',component:LayoutComponent},
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class LayoutRoutingModule { }

@@ -1,10 +1,12 @@
 .container {
   display: flex;
   
+  justify-content: center;
+  
 }
 
 .app-sidebar {
-  float: left;
+  float: center;
   width: 20%;
   background-color: #f1f1f1;
   padding: 15px;
@@ -12,9 +14,10 @@
 }
 
 table {
-    width: 80%;
+
+    width: 125%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 30px;
   }
   
   thead {

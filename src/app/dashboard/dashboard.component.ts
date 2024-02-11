@@ -32,6 +32,7 @@ export class DashboardComponent {
    navigateWithQueryParam(label: string) {
        this.router.navigate(['/dashboard'],
    { queryParams: { status: label.toLowerCase() } });
+
 }
 }
 

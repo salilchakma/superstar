@@ -30,7 +30,7 @@ export class LoginComponent {
       const { userId, password } = this.loginForm.value;
   
       if (this.authService.login(userId, password)) {
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/layout']);
         console.log(this.loginForm.value)
       } else {
         alert('Invalid user id or password');

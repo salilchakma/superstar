@@ -21,6 +21,8 @@ export class ContactComponent {
     this.router.navigate(['/contact'], {
       queryParams: this.formData 
     }); 
+
+    console.log(this.formData)
     
     this.formData = {
          name: '',

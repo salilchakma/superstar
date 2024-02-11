@@ -17,7 +17,8 @@
         <td>{{ user.mobile }}</td>
         <td>{{ user.address }}</td>
         
-        <td><button (click)="viewDetails(user)">View</button></td>
+        <td><button routerLink="details" (click)="viewDetails(user)">View</button></td>
+
       </tr>
     </tbody>
   </table>
